@@ -1,4 +1,4 @@
-;;; personal-python.el --- Python personal configuration
+;;; personal-org.el --- Org personal configuration
 ;;
 ;; Author: Jean Dupin
 
@@ -8,9 +8,9 @@
 
 ;;; Code:
 
-;; indentation style
-
-
 ;; org-roam
+(require 'org-roam)
 (org-roam-db-autosync-mode)
 
+(provide 'personal-org)
+;;; personal-org.el ends here

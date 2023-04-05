@@ -10,10 +10,7 @@
 
 ;; Allow hash to be entered
 (global-set-key (kbd "M-3")
-                '(lambda () (interactive) (insert "#")))
-
-;; (prelude-swap-meta-and-super)
-
+                (lambda () (interactive) (insert "#")))
 
 (provide 'personal-macos)
-;;; personal-modules ends here
+;;; personal-macos.el ends here

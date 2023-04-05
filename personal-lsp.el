@@ -8,7 +8,7 @@
 
 ;;; Code:
 
-(require 'lsp-mode)
+;; (require 'lsp-mode)
 
 ;; (use-package company-lsp
 ;;   :requires company
@@ -20,7 +20,13 @@
 ;;         company-lsp-async t
 ;;         company-lsp-cache-candidates nil))
 
-(setq lsp-ui-doc-enable nil)
+;; (setq lsp-ui-doc-enable nil)
+
+
+(use-package eglot
+  :ensure t
+  :defer t
+  :hook (python-mode . eglot-ensure))
 
 (provide 'personal-lsp)
 ;; ;;; personal-python ends here

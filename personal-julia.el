@@ -12,12 +12,5 @@
 (require 'julia-repl)
 (add-hook 'julia-mode-hook 'julia-repl-mode)
 
-;; LSP for Julia configuration
-;; (require 'lsp-julia)
-;; (add-hook 'julia-mode-hook #'lsp-mode)
-;; (add-hook 'julia-mode-hook #'lsp)
-
 (provide 'personal-julia)
-;;; personal-python ends here
-
-
+;;; personal-julia.el ends here

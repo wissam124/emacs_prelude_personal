@@ -1,4 +1,4 @@
-;;; personal-python.el --- Racket personal configuration
+;;; personal-racket.el --- Racket personal configuration
 ;;
 ;; Author: Jean Dupin
 
@@ -11,4 +11,5 @@
 ;; Set default racket interpreter
 (setq racket-program "/usr/local/bin/racket")
 
-
+(provide 'personal-racket)
+;;; personal-racket.el ends here

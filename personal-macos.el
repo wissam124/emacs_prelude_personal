@@ -9,8 +9,9 @@
 ;;; Code:
 
 ;; Allow hash to be entered
-(global-set-key (kbd "M-3")
-                (lambda () (interactive) (insert "#")))
+(when (memq window-system '(mac ns))
+  (global-set-key (kbd "M-3")
+                  (lambda () (interactive) (insert "#"))))
 
 (provide 'personal-macos)
 ;;; personal-macos.el ends here

@@ -7,10 +7,12 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'julia-mode)
+(use-package julia-mode
+  :ensure t)
 
-(require 'julia-repl)
-(add-hook 'julia-mode-hook 'julia-repl-mode)
+(use-package julia-repl
+  :ensure t
+  :hook (julia-mode . julia-repl-mode))
 
 (provide 'personal-julia)
 ;;; personal-julia.el ends here

@@ -9,8 +9,9 @@
 ;;; Code:
 
 ;; org-roam
-(require 'org-roam)
-(org-roam-db-autosync-mode)
+(use-package org-roam
+  :config
+  (org-roam-db-autosync-mode))
 
 (provide 'personal-org)
 ;;; personal-org.el ends here

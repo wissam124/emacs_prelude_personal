@@ -9,10 +9,13 @@
 ;;; Code:
 
 ;; Use eshell prompt extras
-(with-eval-after-load "esh-opt"
+(use-package eshell-prompt-extras
+  :config
+  (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
-  (setq eshell-highlight-prompt nil
-        eshell-prompt-function 'epe-theme-lambda))
+  (setq eshel-lhighlight-prompt t
+        eshell-prompt-function 'epe-theme-lambda)))
+
 
 (provide 'personal-shell)
 ;;; personal-shell.el ends here

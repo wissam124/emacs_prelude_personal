@@ -29,4 +29,4 @@
   :hook (python-mode . eglot-ensure))
 
 (provide 'personal-lsp)
-;; ;;; personal-python ends here
+;;; personal-lsp.el ends here

@@ -27,4 +27,4 @@
 (setq default-directory "~/")
 
 (provide 'personal-ui)
-;;; prelude-ui.el ends here
+;;; personal-ui.el ends here

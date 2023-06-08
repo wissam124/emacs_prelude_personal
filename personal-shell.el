@@ -10,6 +10,7 @@
 
 ;; Use eshell prompt extras
 (use-package eshell-prompt-extras
+  :ensure t
   :config
   (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")

@@ -10,6 +10,7 @@
 
 ;; org-roam
 (use-package org-roam
+  :ensure t
   :defer t
   :config
   (org-roam-db-autosync-mode))

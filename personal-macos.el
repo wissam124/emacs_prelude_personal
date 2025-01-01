@@ -11,7 +11,7 @@
 ;; Allow hash to be entered
 (when (memq window-system '(mac ns))
   (global-set-key (kbd "M-3")
-                  (lambda () (interactive) (insert "#"))))
+                  (lambda () (interactive) (insert "£"))))
 
 (provide 'personal-macos)
 ;;; personal-macos.el ends here

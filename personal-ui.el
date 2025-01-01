@@ -19,11 +19,6 @@
   (setq sml/theme nil)
   :hook (after-init . sml/setup))
 
-;; (require 'smart-mode-line)
-;; (setq sml/no-confirm-load-theme t)
-;; (setq sml/theme nil)
-;; (add-hook 'after-init-hook #'sml/setup)
-
 ;; default starting directory
 (setq default-directory "~/")
 

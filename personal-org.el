@@ -15,7 +15,7 @@
   :config
   (setq org-roam-directory
         (cond
-         ((string-equal (system-name) "VNYCTR0535") "n:/org-roam")
+         ((member (system-name) '("VNYCTR0535"  "VELSTRA10290")) "n:/org-roam")
          (t "~/Syncthing/org-roam")))
   (org-roam-db-autosync-mode))
 

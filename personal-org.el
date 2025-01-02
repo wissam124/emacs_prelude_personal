@@ -13,7 +13,10 @@
   :ensure t
   :defer t
   :config
-  (setq org-roam-directory "~/Syncthing/org-roam")
+  (setq org-roam-directory
+        (cond
+         ((string-equal (system-name) "VNYCTR0535") "n:/org-roam")
+         (t "~/Syncthing/org-roam")))
   (org-roam-db-autosync-mode))
 
 (provide 'personal-org)
